@@ -31,12 +31,26 @@ This repositry contains the MATLAB implementations of some common numerical algo
 - `jacobi_iter.m`
 
     Numerical computation of all eigenvalues $\lambda_i$ and corresponding eigenvectors of $A$ using Jacobi's iteration.
+- `spline.m`
+
+    Numerical computation of the derivative of a function at a point using cubic splines.
 - `newton_method.m`
 
     Numerical solution of a nonlinear system $f(x,y) = 0$ in $\mathbb R^2$ by Newton's method.
 - `steepest_descent.m`
 
     Numerical solution of a nonlinear system $f(x,y) = 0$ in $\mathbb R^2$ by the method of steepest descent (which, here, is equivalent to the gradient descent method as the norm is Euclidean).
+- `trap.m`
+
+    Numerical solution of a definite integral $\int_a^bf(x)dx$ using Trapezoidal rule.
+- `simp.m`
+
+    Numerical solution of a definite integral $\int_a^bf(x)dx$ using Simpson's $1/3^\text{rd}$-rule.
+- `euler.m`
+
+    Numerical solution of an ordinary differential equation of the form
+    $$\frac{ds}{dt}=f(s,t)$$
+    using Euler's method.
 - `rk4.m`
 
     Numerical solution of an ordinary differential equation of the form
