@@ -2,19 +2,17 @@
 A = input('Enter the square coefficient matrix A: ');
 b = input('Enter the constant column vector b: ');
 n = length(A);
-L = eye(n);
-U = zeros(n);
 
-U(1,:) = A(1,:);
-
-for i=2:n
-    for j=i:n
-        U(i,j) = A(i,j) - L(i,1:i-1)*U(1:i-1,j);
+for k = 1:n
+    if A(k,k)==0
+        warning('LU factorization fails');
+        L = []; U = []; return; 
     end
-    for k=i+1:n
-        L(k,i) = (A(k,i) - L(k,1:i-1)*U(1:i-1,i))/U(i,i);
-    end
+    i = k+1:n;
+    A(i,k) = A(i,k)/A(k,k);
+    A(i,i) = A(i,i)-A(i,k)*A(k,i);
 end
+L = tril(A,-1)+eye(n); U = triu(A); 
 
 z = zeros(n,1);
 x = zeros(n,1);

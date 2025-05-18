@@ -37,6 +37,11 @@ This repositry contains the MATLAB implementations of some common numerical algo
 - `steepest_descent.m`
 
     Numerical solution of a nonlinear system $f(x,y) = 0$ in $\mathbb R^2$ by the method of steepest descent (which, here, is equivalent to the gradient descent method as the norm is Euclidean).
+- `rk4.m`
+
+    Numerical solution of an ordinary differential equation of the form
+    $$\frac{ds}{dt}=f(s,t)$$
+    using Runge-Kutta order $4.$
 - `fredholm.m`
 
     Numerical solution of a type-II Fredholm integral equation (we use trapezoidal rule for the quadrature formula)
