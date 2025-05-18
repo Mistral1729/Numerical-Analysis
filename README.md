@@ -12,7 +12,7 @@ This repositry contains the MATLAB implementations of some common numerical algo
     Numerical solution of a linear system $Ax=b$ using naive Gauss-Jordan elimination.
 - `inverse.m`
 
-    Numerical computation of $A^{-1}$ using naive Gaussian elimination.
+    Numerical computation of $A^{-1}$ using naive Gauss-Jordan elimination.
 - `ludec.m`
 
     Numerical solution of a linear system $Ax=b$ using $LU$ decomposition.
